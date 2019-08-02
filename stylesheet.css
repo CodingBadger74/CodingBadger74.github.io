@@ -1,0 +1,103 @@
+h1 {
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+h2 {
+  font-family: "Snell Roundhand", cursive;
+  font-size: 35px;
+  color: #B404AE;
+}
+
+h3 {
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+p {
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 40px; }
+
+img {
+  style="border:500px solid black;"
+}
+
+/*h1 {
+  font-family: fantasy, cursive;
+  font-size: 45px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26px;
+  color: #cc66ff;
+}
+
+h2 {
+  font-family: fantasy, cursive;
+  font-size: 45px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26px;
+  color: #ff0066;
+}
+
+h3 {
+  font-family: fantasy, cursive;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 15px;
+  color: #99cc00;
+}
+
+p {
+  font-family: fantasy, cursive;
+  font-size: 25px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #00ccff;
+}*/
+/*Brush Script MT
+h1 {
+    color: blue;
+    font-size: 30px;
+  }
+
+h2 {color: red; font-size:24}
+
+p {
+
+  color: green;
+  font-size: 16px;
+  font-family: Monospace, "Courier New", serif;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.orangeParagraph {
+  color: orange;
+}
+
+#lastParagraph {
+  font-size: 22px;
+}
+
+#sectionTwo {
+  font-family: cursive;
+}
+*/

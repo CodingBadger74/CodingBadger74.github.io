@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Information about the site -->
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+
+  <body bgcolor=#E0F8F7 onload="about_me()">
+    <!-- Content to go on the site -->
+    <h1><center>Bronwen Olson</center></h1>
+    <div contenteditable>
+      <h2><center><i>This text is editable. Write whatever you want!</i></center></h2>
+    </div>
+
+    <button class="button" onmousedown="about_me()">About Me</button>
+      <!-- <a href='file:///Users/gwc/Desktop/TestFolder/FolderA/about_me.html'></a> -->
+    <button class="button" onmousedown='summer()'>Summer</button>
+    <button class="button" onmousedown="hobbies()">Hobbies</button>
+    <p></p>
+
+    <div id='ABOUTME'>
+      <h3 align=center>About Me</h3>
+      <p style='text-indent:25px' class='orangeParagraph' onmouseover="makeRed(this)"
+      onmouseout="makeBlack(this)">I am a rising junior who
+      attends <a href='https://nhs.needham.k12.ma.us/'>Needham High School</a>. I
+      was born in Salt Lake City, Utah, and I grew up in England. I am currently
+      living in Needham, Massachusetts. I have one older sister, three younger sisters, a
+      cat, a dog, and a tortoise. My favorite school subjects are math and physics.</p>
+      <!-- (Picture of pets) -->
+    </div>
+
+    <div id='SUMMER'>
+      <img src='file:///Users/gwc/Downloads/image1.jpeg' alt='A picture of the class of Girls Who
+      Code posing in front of a water fountain on a field trip to Symantec.'
+      title='Symantec Field Trip' align='right' id='SUMMERIMAGE' width=50%
+      onmouseover="resize_summer(this)" onmouseout="resize_summer(this)"
+      onload="resize_summer(this)">
+
+      <h3 align=center>Summer</h3>
+      <p style='text-indent:25px' onmouseover="makeGreen(this)" onmouseout='makeBlack(this)'>
+      So far this summer, I have visited my relatives in Utah, and I am currently attending a
+      <a href='https://girlswhocode.com/summer-immersion-programs/'>
+      Girls Who Code Summer Immersion Program</a> in Boston. I am also planning to
+      take driver’s ed this summer. I am looking forward to my junior year and
+      taking an Astronomy 101 elective.</p>
+    </div>
+
+    <!-- (Link to GWC SIP. Picture of group.) -->
+
+    <div id='HOBBIES'>
+      <img src='file:///Users/gwc/Downloads/wp1839578-stranger-things-wallpapers.jpg'
+      alt = 'A poster for season two of Stranger Things.' title='Stranger Things' align='left' id='HOBBIESIMAGE'
+      width=27% onmouseover="resize_hobbies(this)" onmouseout="resize_hobbies(this)"
+      onload="resize_hobbies(this)" >
+
+      <h3 align=center>Hobbies</h3>
+      <p style='text-indent:25px' id='lastParagraph' onmouseover="makeBlue(this)"
+      onmouseout="makeBlack(this)"> My hobbies include reading, coding, cryptology,
+      making films, and hanging out with my friends. I also enjoy watching <i>Stranger Things</i> on
+      <a href='https://www.netflix.com/'>Netflix</a>. Currently I am reading Carl
+      Sagan's book <a href='https://www.amazon.com/Cosmos-Personal-Voyage-Carl-Sagan/dp/1531888062'>
+      <i>Cosmos</i></a>. I particularly enjoy graphic novels, and my favorite graphic
+      novel is <a href='https://www.amazon.com/Nimona-Noelle-Stevenson/dp/0062278223'>
+      <i>Nimona</i></a> by Noelle Stevenson.</p>
+    </div>
+    <!-- (Link to Netflix, Cosmos, and Nimona. Picture of Nimona.) -->
+  </body>
+
+  <script>
+    function makeRed(element) {
+      element.style="color:red; text-indent:25px;";
+    }
+
+    function makeGreen(element) {
+      element.style="color:green; text-indent:25px;";
+    }
+
+    function makeBlue(element) {
+      element.style="color:blue; text-indent:25px;";
+    }
+
+    function makeBlack(element) {
+      element.style.color='color:black';
+      element.style='text-indent:25px';
+    }
+
+    function about_me() {
+      var this_one = document.getElementById('ABOUTME');
+      this_one.style='display:block';
+      var other = document.getElementById('HOBBIES');
+      other.style='display:none';
+      var and_another = document.getElementById('SUMMER');
+      and_another.style='display:none';
+      var image = document.getElementById('ABOUTMEIMAGE');
+      image.style='dislay:block';
+      var other_image = document.getElementById('HOBBIESIMAGE');
+      other_image.style='display:none';
+      var third_image = document.getElementById('SUMMERIMAGE');
+      third_image.style='display:none';
+    }
+
+    function summer() {
+      var this_one = document.getElementById('SUMMER');
+      this_one.style='display:block';
+      var other = document.getElementById('HOBBIES');
+      other.style='display:none';
+      var and_another = document.getElementById('ABOUTME');
+      and_another.style='display:none';
+      var image = document.getElementById('SUMMERIMAGE');
+      image.style='dislay:block';
+      var other_image = document.getElementById('HOBBIESIMAGE');
+      other_image.style='display:none';
+      var third_image = document.getElementById('ABOUTMEIMAGE');
+      third_image.style='display:none';
+    }
+
+    function hobbies() {
+      var this_one = document.getElementById('HOBBIES');
+      this_one.style='display:block';
+      var other = document.getElementById('ABOUTME');
+      other.style='display:none';
+      var and_another = document.getElementById('SUMMER');
+      and_another.style='display:none';
+      var image = document.getElementById('HOBBIESIMAGE');
+      image.style='dislay:block';
+      var other_image = document.getElementById('ABOUTMEIMAGE');
+      other_image.style='display:none';
+      var third_image = document.getElementById('SUMMERIMAGE');
+      third_image.style='display:none';
+    }
+
+    var flag = true;
+    function resize_summer(pic) {
+      if(flag) {
+        pic.style.width = '50%';
+      } else {
+        pic.style.width = '100%';
+      }
+      (flag)?flag=false:flag=true;
+    }
+
+    var flag2 = true;
+    function resize_hobbies(pic) {
+      if (flag2) {
+        pic.style.width = '27%';
+      } else {
+        pic.style.width = "100%";
+      }
+      (flag2)?flag2=false:flag2=true;
+    }
+/*
+    function makeBig(pic){
+      pic.style.width = 90%;
+    }*/
+  </script>
+
+  <style>
+    .button {
+      background-color: #0174DF;
+      border: None;
+      color: white;
+      padding: 15px 25px;
+      text-align: center;
+      font-size: 150%;
+      width: 33.1%;
+      font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+      border-radius: 12px;
+    }
+
+    .button:hover {
+      background-color: green;
+    }
+  </style>
+</html>
+<!-- var graph = document.getElementById('lastParagraph'); graph.style = 'color:red'; -->
